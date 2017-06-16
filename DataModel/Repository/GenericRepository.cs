@@ -55,6 +55,11 @@ namespace DataModel.Repository
             return DbSet.ToList();
         }
 
+        public async virtual Task<List<TEntity>> GetAllAsync()
+        {
+            return await DbSet.ToListAsync();
+        }
+
         public virtual void Update(TEntity entityToUpdate)
         {
             DbSet.Attach(entityToUpdate);

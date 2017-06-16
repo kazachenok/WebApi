@@ -7,7 +7,7 @@ using DataModel.UnitOfWork;
 using DataModel.Models;
 using BusinessEntities;
 using AutoMapper;
-
+using System.Threading.Tasks;
 
 namespace BusinessServices
 {
@@ -37,9 +37,9 @@ namespace BusinessServices
             return null; ;
         }
 
-        public IEnumerable<ProductEntity> GetAllProducts()
+        public async Task<IEnumerable<ProductEntity>> GetAllProducts()
         {
-            var products = unitOfWork.ProductRepository.GetAll().ToList();
+            var products = await unitOfWork.ProductRepository.GetAllAsync();
             if (products.Any())
             {
                 var productsModel = Mapper.Map<List<Product>, List<ProductEntity>>(products);

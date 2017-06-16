@@ -119,17 +119,17 @@ namespace BusinessServices.Tests
 
         #region Tests 
         [Test]
-        public void GetAllProductsTestForNull()
+        public async Task GetAllProductsTestForNull()
         {
             expectedProducts.Clear();
-            var products = productService.GetAllProducts();
+            var products = await productService.GetAllProducts();
             Assert.Null(products);
         }
 
         [Test]
-        public void GetAllProductsTest()
+        public async Task GetAllProductsTest()
         {
-            var products = productService.GetAllProducts().ToList();
+            var products = await productService.GetAllProducts();
 
             var productList = 
                 products.Select(productEntity =>

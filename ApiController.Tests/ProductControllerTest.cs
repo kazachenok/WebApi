@@ -12,6 +12,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
+using System.Threading.Tasks;
 using System.Web.Http;
 using System.Web.Http.Hosting;
 using TestsHelper;
@@ -146,11 +147,11 @@ namespace ApiController.Tests
         }
  
         [Test]
-        public void GetAllProductsTest()
+        public async Task GetAllProductsTest()
         {
             var productController = ControllerCreater("api/Products", HttpMethod.Get);
             
-            response = productController.Get();
+            response = await productController.Get();
             var responseResult = JsonConvert.DeserializeObject<List<Product>>(response.Content.ReadAsStringAsync().Result);
 
             Assert.AreEqual(response.StatusCode, HttpStatusCode.OK);

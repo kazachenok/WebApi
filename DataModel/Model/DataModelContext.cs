@@ -18,7 +18,11 @@ namespace DataModel.Models
         public DataModelContext() : base("name=DataModelContext")
         {
             Database.SetInitializer(new MigrateDatabaseToLatestVersion<DataModelContext, Migrations.Configuration>());
-            //Database.SetInitializer<DataModelContext>(new DropCreateDatabaseIfModelChanges<DataModelContext>());
+        }
+
+        public DataModelContext(IDatabaseInitializer<DataModelContext> initializer) : base("name=DataModelContext")
+        {
+            Database.SetInitializer(initializer);
         }
 
         public System.Data.Entity.DbSet<DataModel.Models.Product> Products { get; set; }

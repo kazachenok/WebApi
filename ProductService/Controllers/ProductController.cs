@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
+using System.Threading.Tasks;
 using System.Web.Http;
 
 namespace ProductService.Controllers
@@ -19,9 +20,9 @@ namespace ProductService.Controllers
         }
 
         // GET: api/Product
-        public HttpResponseMessage Get()
+        public async Task<HttpResponseMessage> Get()
         {
-            var products = productServices.GetAllProducts();
+            var products = await productServices.GetAllProducts();
             if (products != null)
             {
                 var productEntities = products as List<ProductEntity> ?? products.ToList();
