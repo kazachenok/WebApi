@@ -1,0 +1,12 @@
+c:\Users\Bleach\Documents\Visual Studio 2015\Projects\ProductService\ProductDataAccess\bin\Debug\ProductDataAccess.dll.config
+c:\Users\Bleach\Documents\Visual Studio 2015\Projects\ProductService\ProductDataAccess\bin\Debug\ProductDataAccess.dll
+c:\Users\Bleach\Documents\Visual Studio 2015\Projects\ProductService\ProductDataAccess\bin\Debug\ProductDataAccess.pdb
+c:\Users\Bleach\Documents\Visual Studio 2015\Projects\ProductService\ProductDataAccess\bin\Debug\EntityFramework.dll
+c:\Users\Bleach\Documents\Visual Studio 2015\Projects\ProductService\ProductDataAccess\bin\Debug\EntityFramework.SqlServer.dll
+c:\Users\Bleach\Documents\Visual Studio 2015\Projects\ProductService\ProductDataAccess\bin\Debug\EntityFramework.xml
+c:\Users\Bleach\Documents\Visual Studio 2015\Projects\ProductService\ProductDataAccess\bin\Debug\EntityFramework.SqlServer.xml
+c:\Users\Bleach\Documents\Visual Studio 2015\Projects\ProductService\ProductDataAccess\obj\Debug\ProductDataAccess.dll
+c:\Users\Bleach\Documents\Visual Studio 2015\Projects\ProductService\ProductDataAccess\obj\Debug\ProductDataAccess.pdb
+c:\Users\Bleach\Documents\Visual Studio 2015\Projects\ProductService\ProductDataAccess\obj\Debug\ProductDataAccess.Migrations.Initial.resources
+c:\Users\Bleach\Documents\Visual Studio 2015\Projects\ProductService\ProductDataAccess\obj\Debug\ProductDataAccess.csproj.GenerateResource.Cache
+C:\Users\Bleach\Documents\Visual Studio 2015\Projects\ProductService\ProductDataAccess\obj\Debug\ProductDataAccess.csprojResolveAssemblyReference.cache
